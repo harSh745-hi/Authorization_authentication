@@ -1,0 +1,10 @@
+# Completed a Backend Project focusing on Authentication & Authorization .
+
+--  Key highlights:
+--  Secure password hashing with bcrypt
+--  JWT-based Authentication & Authorization
+--  Token & Cookie handling for sessions
+--  API testing with Postman
+--  Built with Node.js, Express, MongoDB
+
+This project gave me great insights into building secure and scalable backend systems.
