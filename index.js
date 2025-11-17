@@ -18,6 +18,10 @@ app.use(cookieParser());
 
 app.use('/api/v1',user);
 
+app.use("/", (req,res)=> {
+    res.send("backend is running successfully");
+})
+
 app.listen(PORT,()=>{
     console.log(`App is listening on ${PORT}`);
 })
