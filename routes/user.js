@@ -6,7 +6,7 @@ const {login,signup} = require('../controllers/auth');
 const User = require("../models/user");
 const {auth,isAdmin,isUser} = require('../middleware/auth');
 
-router.post('/login',login);
+router.post('/login',auth,login);
 router.post('/signup',signup);
 
 // testing for  single middleware 
