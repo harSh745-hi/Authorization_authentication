@@ -49,7 +49,7 @@ Below are the routes you can test using **Postman**, **Thunder Client**, or **RE
 ### 1️⃣ Signup (POST)
 
 ```
-POST /api/auth/signup
+POST /api/v1/auth/signup
 ```
 
 **Body**
@@ -68,7 +68,7 @@ POST /api/auth/signup
 ### 2️⃣ Login (POST)
 
 ```
-POST /api/auth/login
+POST /api/v1/auth/login
 ```
 
 **Body**
