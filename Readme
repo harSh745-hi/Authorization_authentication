@@ -1,10 +1,143 @@
-# Completed a Backend Project focusing on Authentication & Authorization .
+# Backend Authentication & Role-Based Access Control (RBAC)
 
---  Key highlights:
---  Secure password hashing with bcrypt
---  JWT-based Authentication & Authorization
---  Token & Cookie handling for sessions
---  API testing with Postman
---  Built with Node.js, Express, MongoDB
+This is a backend service built using **Node.js**, **Express**, and **MongoDB**.
+The project provides a secure authentication system with **Signup**, **Login**, and **Role-based access control (Admin/User)**. 
+Middlewares are used to protect routes based on user roles and ensure secure API communication.
 
-This project gave me great insights into building secure and scalable backend systems.
+---
+
+## 🚀 Features
+
+* User Signup & Login
+* Password hashing for security
+* JWT-based authentication
+* Role-based authorization (User/Admin)
+* Structured and scalable project architecture
+
+---
+
+## 🧱 Tech Stack
+
+* **Node.js**
+* **Express.js**
+* **MongoDB + Mongoose**
+* **JWT (JSON Web Token)**
+* **Bcrypt**
+* **Express Middleware**
+
+---
+
+```
+
+---
+
+## 🔐 Authentication Flow
+
+1. User registers with name, email, password, and role.
+2. Password is hashed before storage.
+3. JWT token is generated on login.
+4. Token is required to access protected routes.
+
+---
+
+## 🧭 APIs & Testing
+
+Below are the routes you can test using **Postman**, **Thunder Client**, or **REST Client**:
+
+---
+
+### 1️⃣ Signup (POST)
+
+```
+POST /api/auth/signup
+```
+
+**Body**
+
+```json
+{
+  "name": "Harsh",
+  "email": "test@example.com",
+  "password": "123456",
+  "role": "admin"
+}
+```
+
+---
+
+### 2️⃣ Login (POST)
+
+```
+POST /api/auth/login
+```
+
+**Body**
+
+```json
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+```
+
+**Response**
+Returns a JWT token to be used for protected routes.
+
+---
+
+
+
+
+## 🧠 Middlewares Used
+
+###  `authMiddleware`
+
+* Validates JWT
+* Ensures user is logged in
+
+
+---
+
+## 🗄 Database
+
+Make sure to add your **MongoDB URI** in `.env`:
+
+```
+MONGO_URI = your_db_connection_string
+JWT_SECRET = your_secret_key
+```
+
+---
+
+## 🏁 Run the Project
+
+```
+npm install
+npm start
+```
+
+Server will run on:
+
+```
+link :https://authorization-authentication-bxfh.onrender.com/
+```
+
+---
+
+## ✔ Summary
+
+This backend project demonstrates:
+
+* Secure authentication,
+* Clean role-based route protection,
+* API testing using tools like Postman,
+* Production-ready middleware pattern.
+
+Feel free to extend it with:
+
+* Refresh tokens
+* Password reset
+* Admin dashboards
+* Frontend integration
+
+---
